@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 function App() {
@@ -9,18 +9,6 @@ function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [currentTask, setCurrentTask] = useState({});
 
-
-
-  // useEffect(() => {
-  //   const storedTasks = JSON.parse(localStorage.getItem('tasks'));
-  //   if (storedTasks) {
-  //     setTasks(storedTasks);
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem('tasks', JSON.stringify(tasks));
-  // }, [tasks]);
 
   const handleAddTask = (e) => {
     e.preventDefault();
